@@ -42,7 +42,7 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <>
+    <div id="nav-menu">
       <Box bg={useColorModeValue('teal.100', 'teal.900')} px={4} position="sticky" top="0" left="0">
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
@@ -102,6 +102,6 @@ export default function Navbar() {
       {/* <Box p={4}>Main Content Here</Box> */}
       {/* <AboutMe/>
       <GithubCalender/> */}
-    </>
+    </div>
   );
 }

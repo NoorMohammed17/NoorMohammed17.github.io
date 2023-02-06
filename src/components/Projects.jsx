@@ -11,7 +11,7 @@ const Projects = () => {
     // const github_himalaya_Url="https://github.com/btcpatil/handy-zipper-9467";
     
   return (
-    <div>
+    <div  id="projects">
       <h1 style={{textAlign:"center"}}> My Projects</h1>
 
       <div style={{display:"flex", marginBottom:"30px"}}>
