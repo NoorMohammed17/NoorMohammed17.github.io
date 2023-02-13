@@ -8,6 +8,7 @@ import {
   Heading,
   HStack,
   Button,
+  IconButton,
   Menu,
   MenuButton,
   MenuList,
@@ -30,7 +31,8 @@ export default function Navbar() {
         left="0"
       >
         <Heading>M Noor Mohammed</Heading>
-        <HStack display={{ base: "none", md: "flex" }}>
+        {/* <HStack display={{ base: "none", md: "flex" }}> */}
+        <HStack direction={{ base: "none", md: "flex" }}>
           <Text className="nav-link home">Home</Text>
           <Text className="nav-link about">About</Text>
           <Text className="nav-link skills">Skills</Text>
@@ -38,10 +40,11 @@ export default function Navbar() {
           <Text className="nav-link contact">Contact</Text>
           <Button className="nav-link resume">Resume</Button>
         </HStack>
-        <Button display={{ base: "block", md: "none" }}>
-          <Menu>
-            <MenuButton as={Button} onClick={onOpen}>
-              <HamburgerIcon />
+        {/* <Button > */}
+        <IconButton display={{  md: "none" }}>
+          <Menu >
+            <MenuButton as={Button} onClick={isOpen ? onClose : onOpen}>
+            {isOpen ? <CloseIcon /> : <HamburgerIcon />}
             </MenuButton>
             <MenuList>
               <MenuItem>Home</MenuItem>
@@ -52,7 +55,8 @@ export default function Navbar() {
               <MenuItem>Resume</MenuItem>
             </MenuList>
           </Menu>
-        </Button>
+          </IconButton>
+        {/* </Button> */}
       </Flex>
     </div>
   );
