@@ -11,6 +11,7 @@ export function AboutMe() {
       padding={"3%"}
       id="about"
       className="about section"
+      direction={{ base:'column', md:'row' }}
     >
       <Image
         htmlWidth="300"
@@ -18,7 +19,6 @@ export function AboutMe() {
         borderRadius="full"
         id="pic"
         class="home-img"
-        // src="https://i.pinimg.com/originals/81/17/8b/81178b47a8598f0c81c4799f2cdd4057.gif"
         src={mypic}
         alt="myPhoto"
       />
@@ -35,11 +35,7 @@ export function AboutMe() {
           forward to work in a challenging work environment.
         </Text>
       </Heading>
-      {/* <Image 
-          id="pic"
-          src="https://i.pinimg.com/originals/81/17/8b/81178b47a8598f0c81c4799f2cdd4057.gif"
-          alt="myPhoto"
-        /> */}
+     
     </Center>
   );
 }
