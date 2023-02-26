@@ -1,63 +1,96 @@
-import React from "react";
-//import mypic from "./Pictures/proPic.jpeg";
-// import {AboutMe} from "./AboutMe";
-// import GithubCalender from './GithubCalender'
+
 import {
+  Box,
   Flex,
-  Text,
-  Heading,
   HStack,
-  Button,
+  Link,
   IconButton,
   Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
   useDisclosure,
-} from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+  useColorModeValue,
+  Stack,
+  Text,
+  Button,
+} from '@chakra-ui/react';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+
+
+const Links =[{name:'Home',id:'home',class:'nav-link home'},{name:'About',id:'about',class:'nav-link about'},{name:'Skills',id:'skills',class:'nav-link skills'},{name:'Projects',id:'projects',class:'nav-link projects'},{name:'Contact',id:'contact',class:'nav-link contact'}]
+const NavLink = ({link}) => (
+  <Link
+    px={5}
+    py={1}
+    fontWeight="semibold"
+    rounded={'md'}
+    _hover={{
+      textDecoration: 'none',
+      bg: useColorModeValue('gray.200', 'gray.700'),
+    }}
+    className={link.class}
+    href={`#${link.id}`}>
+    {link.name}
+  </Link>
+);
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div id="nav-menu">
-      <Flex
-        border={"1px solid red"}
-        justifyContent={"space-between"}
-        px={5}
-        position="sticky"
-        top="0"
-        left="0"
-      >
-        <Heading>M Noor Mohammed</Heading>
-        {/* <HStack display={{ base: "none", md: "flex" }}> */}
-        <HStack direction={{ base: "none", md: "flex" }}>
-          <Text className="nav-link home">Home</Text>
-          <Text className="nav-link about">About</Text>
-          <Text className="nav-link skills">Skills</Text>
-          <Text className="nav-link projects">Projects</Text>
-          <Text className="nav-link contact">Contact</Text>
-          <Button className="nav-link resume">Resume</Button>
-        </HStack>
-        {/* <Button > */}
-        <IconButton display={{  md: "none" }}>
-          <Menu >
-            <MenuButton as={Button} onClick={isOpen ? onClose : onOpen}>
-            {isOpen ? <CloseIcon /> : <HamburgerIcon />}
-            </MenuButton>
-            <MenuList>
-              <MenuItem>Home</MenuItem>
-              <MenuItem>About</MenuItem>
-              <MenuItem>Skills</MenuItem>
-              <MenuItem>Projects</MenuItem>
-              <MenuItem>Contact</MenuItem>
-              <MenuItem>Resume</MenuItem>
-            </MenuList>
-          </Menu>
-          </IconButton>
-        {/* </Button> */}
-      </Flex>
+    <div  id="nav-menu" style={{position:'sticky',top:0,zIndex:2}}>
+      <Box bg="#C7AE92" px={4} py={10} >
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+         
+          <Flex alignItems={'center'}>
+            <Menu>
+                {/* <Image w="25%" src='/images/signature.png'></Image> */}
+                <Text>Noor Mohammed</Text>
+            </Menu>
+          </Flex>
+        
+          <HStack spacing={8} alignItems={'center'}>
+            
+            <HStack
+              as={'nav'}
+              spacing={4}
+              display={{ base: 'none', md: 'flex' }}>
+              {Links.map((link) => (
+                <NavLink key={link.id} link={link}/>
+              ))}
+              <Button
+                w={{ base: '150px', md: '100px', lg: '100px' }}
+                m="auto"
+                onClick={()=>{window.open('https://drive.google.com/file/d/1jRySSU_Uuv_yTrvth5NLmz1ujZBK8owx/view?usp=share_link',"_blank")}}
+                borderColor="white"
+                variant='outline'
+                
+                id="resume-button-1"
+                >
+                  <a  id="resume-link-1" href='/Noor_Mohammed_Resume.pdf' className="nav-link resume" download    >Resume {''}</a>
+              </Button>
+            </HStack>
+          </HStack>
+          <IconButton
+            size={'md'}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            aria-label={'Open Menu'}
+            display={{ md: 'none' }}
+            onClick={isOpen ? onClose : onOpen}
+          />
+
+        </Flex>
+
+        {isOpen ? (
+          <Box pb={4} display={{ md: 'none' }}>
+            <Stack as={'nav'} spacing={4}>
+              {Links.map((link) => (
+                <NavLink key={link.id} link={link}/>
+              ))}
+            </Stack>
+          </Box>
+        ) : null}
+      </Box>
+
+      
     </div>
   );
 }
