@@ -20,30 +20,34 @@ const NavLink = ({link}) => (
   <Link
     px={5}
     py={1}
+    color='white'
     fontWeight="semibold"
     rounded={'md'}
     _hover={{
       textDecoration: 'none',
+      color:'black',
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
     className={link.class}
-    href={`#${link.id}`}>
+    href={`${link.id}`}>
     {link.name}
   </Link>
 );
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const color='blue.400';
+  //const color1="#C7AE92"
 
   return (
     <div  id="nav-menu" style={{position:'sticky',top:0,zIndex:2}}>
-      <Box bg="#C7AE92" px={4} py={10} >
+      <Box bg={color} px={4} py={1} >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
          
           <Flex alignItems={'center'}>
             <Menu>
                 {/* <Image w="25%" src='/images/signature.png'></Image> */}
-                <Text>Noor Mohammed</Text>
+                <Text  as='i' fontSize='3xl' color='white'> M Noor Mohammed</Text>
             </Menu>
           </Flex>
         
@@ -65,7 +69,7 @@ export default function Navbar() {
                 
                 id="resume-button-1"
                 >
-                  <a  id="resume-link-1" href='/Noor_Mohammed_Resume.pdf' className="nav-link resume" download    >Resume {''}</a>
+                  <a  id="resume-link-1" className="nav-link resume" href='/Noor_Mohammed_Resume.pdf' download >Resume {''}</a>
               </Button>
             </HStack>
           </HStack>

@@ -15,10 +15,10 @@ export function AboutMe() {
     >
       <Image
         htmlWidth="300"
-        hmlHeight="450"
+        htmlHeight="450"
         borderRadius="full"
         id="pic"
-        class="home-img"
+        className="home-img"
         src={mypic}
         alt="myPhoto"
       />

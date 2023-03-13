@@ -13,8 +13,8 @@ const Projects = () => {
     <div id="projects">
       <h1 style={{ textAlign: "center" }}> My Projects</h1>
 
-      <div style={{ display: "flex", marginBottom: "30px" }}>
-        <div style={{ width: "65%", marginRight: "10px" , border:"1px solid red"}}>
+      <div style={{ display: "flex", marginBottom: "30px", margin:'auto' }}>
+        <div style={{ width: "65%", marginRight: "10px" }}>
           <img src={licious} alt="licious"  width="100%" />
         </div>
         <div>
