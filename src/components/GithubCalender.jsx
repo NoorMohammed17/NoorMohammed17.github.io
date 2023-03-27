@@ -13,7 +13,8 @@ const GithubCalender = () => {
         
         blockSize={12}
         fontSize={12}
-        color='#C7AE92'
+        // color='#C7AE92'
+        color='green'
       >
          <ReactTooltip delayShow={20} html /> 
       </GitHubCalendar>
