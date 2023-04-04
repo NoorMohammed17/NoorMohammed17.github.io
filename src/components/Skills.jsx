@@ -22,11 +22,12 @@ import {
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { DiMongodb } from "react-icons/di";
+//import { Center } from '@chakra-ui/react'
 
 export default function Skills() {
   return (
     <Box id="skills">
-      <Heading color="#C7AE92" p="30px" mb="20px" textAlign="center">
+      <Heading color="#0ac09d" p="30px" mb="20px" textAlign="center">
         SKILLS
       </Heading>
       <Grid
@@ -35,15 +36,16 @@ export default function Skills() {
           md: "repeat(3, 1fr)",
           lg: "repeat(6, 1fr)",
         }}
-        w="80%"
-        display='flex'
-        justifyContent={"center"}
-        alignItems='center'
+        w={{base:'100%', md:'80%'}}
+       
+       
         rowGap={"20px"}
         columnGap="20px"
+        m='auto'
+       
       >
         <Box
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           borderRadius={"md"}
           _hover={{ bg: "#E2E8F0" }}
@@ -53,10 +55,11 @@ export default function Skills() {
             HTML
           </Text>
         </Box>
+       
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -69,7 +72,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -82,7 +85,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -95,7 +98,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -108,7 +111,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -123,7 +126,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -136,7 +139,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -149,7 +152,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -162,7 +165,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -175,7 +178,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -188,7 +191,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -203,7 +206,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -216,7 +219,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -229,7 +232,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -242,7 +245,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -255,7 +258,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
@@ -272,7 +275,7 @@ export default function Skills() {
 
         <Box
           className="skills-card"
-          bg="#C7AE92"
+          bg="#0ac09d"
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
