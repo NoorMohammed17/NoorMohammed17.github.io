@@ -6,6 +6,7 @@ import About from "./About";
 import Projects from "./Projects";
 import GithubStats from "./GithubStats";
 import Skills from "./Skills"
+import Contact from "./Contact";
 
 const Main = () => {
   return (
@@ -17,6 +18,7 @@ const Main = () => {
       <Projects />
       <GithubCalender />
       <GithubStats />
+      <Contact/>
     </div>
   );
 };

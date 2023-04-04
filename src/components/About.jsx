@@ -6,6 +6,7 @@ import {
   Stack,
   Text,
   useBreakpointValue,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import mypic from "./Pictures/proPic.jpeg";
 
@@ -16,6 +17,8 @@ export default function About() {
       direction={{ base: "column", md: "row" }}
       className="about section"
       margin='auto'
+      mr='5%'
+      mt='20px'
     >
       
       <Flex p={8} flex={1} align={"center"} justify={"center"}>
@@ -65,16 +68,43 @@ export default function About() {
             >
               Contact
             </Button>
-            <Button rounded={"full"}>Resume</Button>
+            <Button
+                w={{ base: "150px", md: "100px", lg: "100px" }}
+                m="auto"
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1jRySSU_Uuv_yTrvth5NLmz1ujZBK8owx/view?usp=share_link",
+                    "_blank"
+                  );
+                }}
+                borderColor="white"
+                variant="outline"
+                id="resume-button-1"
+              >
+                <a
+                  id="resume-link-1"
+                  className="nav-link resume"
+                  href="/Noor_Mohammed_Resume.pdf"
+                  download
+                >
+                  Resume {""}
+                </a>
+              </Button>
           </Stack>
         </Stack>
       </Flex>
 
-      <Flex flex={1} >
+      <Flex flex={1}
+        bg={useColorModeValue('white', 'gray.800')}
+        boxShadow={'2xl'}
+        borderRadius={'30%'}
+      
+       > 
         <Image
         htmlWidth="400"
         htmlHeight="450"
         borderRadius="full"
+        m='auto'
           alt={" Image"}
           objectFit={"cover"}
           src={mypic}

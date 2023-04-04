@@ -5,7 +5,7 @@ export default function GithubStats() {
   return (
     <Box p='20px' >
         <Heading></Heading>
-        <Flex w={{base:'60%',sm:'60%',md:'80%'}} m='auto' columnGap={'5px'} flexDirection={{base:'column',sm:'column',md:'row'}}>
+        <Flex w={{base:'90%',sm:'90%',md:'80%'}} m='auto' columnGap={'5px'} flexDirection={{base:'column',sm:'column',md:'row'}}>
             <Box>
             <Image id="github-stats-card" src='https://github-readme-stats.vercel.app/api?username=NoorMohammed17&theme=swift&show_icons=true&hide_border=false&count_private=true'/>
             </Box>
