@@ -1,7 +1,7 @@
 import React from "react";
 import licious from "./Pictures/licious.PNG";
 import himalaya from "./Pictures/himalaya.PNG";
-import { Image, Link, Flex, Button } from "@chakra-ui/react";
+import { Image, Link, Flex, Button,Heading } from "@chakra-ui/react";
 
 const Projects = () => {
   const licious_Url = "https://guileless-kleicha-1e91f4.netlify.app/";
@@ -11,7 +11,9 @@ const Projects = () => {
 
   return (
     <div id="projects">
-      <h1 style={{ textAlign: "center" }}> My Projects</h1>
+      <Heading color="#0ac09d" p="30px" mb="20px" textAlign="center">
+        MY PROJECTS
+      </Heading>
 
       <div style={{ display: "flex", marginBottom: "30px", margin:'auto' }}>
         <div style={{ width: "65%", marginRight: "10px" }}>

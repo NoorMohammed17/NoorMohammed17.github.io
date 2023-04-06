@@ -19,6 +19,7 @@ export default function About() {
       margin='auto'
       mr='5%'
       mt='20px'
+      id={'about'}
     >
       
       <Flex p={8} flex={1} align={"center"} justify={"center"}>
@@ -79,7 +80,7 @@ export default function About() {
                     "_blank"
                   );
                 }}
-                borderColor="white"
+                borderColor="teal"
                 variant="outline"
                 id="resume-button-1"
               >

@@ -28,7 +28,12 @@ import {
   
   export default function Contact() {
     return (
-      <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden">
+      <div id={'contact'}>
+        <Heading color="#0ac09d" p="30px" mb="20px" textAlign="center">
+        CONTACT
+      </Heading>
+
+      <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden" >
         <Flex>
           <Box
             bg="#02054B"
@@ -162,5 +167,6 @@ import {
           </Box>
         </Flex>
       </Container>
+      </div>
     );
   }
