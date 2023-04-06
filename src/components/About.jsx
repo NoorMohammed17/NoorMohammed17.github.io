@@ -72,8 +72,9 @@ export default function About() {
               Contact
             </Button>
             <Button
-                w={{ base: "150px", md: "100px", lg: "100px" }}
+                // w={{ base: "150px", md: "100px", lg: "100px" }}
                 m="auto"
+                rounded={"full"}
                 onClick={() => {
                   window.open(
                     "https://drive.google.com/file/d/1jRySSU_Uuv_yTrvth5NLmz1ujZBK8owx/view?usp=share_link",
