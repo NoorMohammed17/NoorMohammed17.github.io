@@ -28,9 +28,10 @@ export function AboutMe() {
         <Text w={"100%"} id="user-detail-name">
           I am, M Noor Mohammed{" "}
         </Text>
-        <Box w={"100%"}>Full Stack Web Developer</Box>
+        {/* <Box w={"100%"}>Full Stack Web Developer</Box> */}
+        <Box w={"100%"}>Front-End Developer</Box>
         <Text w={"100%"} fontSize="20px" id="user-detail-intro">
-          Passionate about building web applications using front-end and backend
+          Passionate about building web applications using front-end 
           technologies . I believe in continuous learning and growth. Looking
           forward to work in a challenging work environment.
         </Text>

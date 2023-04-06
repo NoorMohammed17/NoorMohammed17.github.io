@@ -4,8 +4,8 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaReact,
-  FaBootstrap,
-  FaNode,
+  //FaBootstrap,
+  //FaNode,
   FaGithub,
 } from "react-icons/fa";
 import {
@@ -13,15 +13,15 @@ import {
   SiTypescript,
   SiRedux,
   SiChakraui,
-  SiExpress,
+  //SiExpress,
   SiVercel,
   SiNetlify,
-  SiPostman,
+  //SiPostman,
   SiVisualstudiocode,
   SiCanva,
 } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { DiMongodb } from "react-icons/di";
+//import { TbBrandNextjs } from "react-icons/tb";
+//import { DiMongodb } from "react-icons/di";
 //import { Center } from '@chakra-ui/react'
 
 export default function Skills() {
@@ -36,17 +36,20 @@ export default function Skills() {
           md: "repeat(3, 1fr)",
           lg: "repeat(6, 1fr)",
         }}
-        w={{base:'100%', md:'80%'}}
+        w={{base:'90%', md:'80%'}}
+        p={{base:'5%', md:'none'}}
        
        
         rowGap={"20px"}
         columnGap="20px"
         m='auto'
+        alignItems={'center'}
+        justifyContent={'center'}
        
       >
         <Box
           bg="#0ac09d"
-          p="5px"
+          p="10px"
           borderRadius={"md"}
           _hover={{ bg: "#E2E8F0" }}
         >
@@ -137,7 +140,7 @@ export default function Skills() {
           </Text>
         </Box>
 
-        <Box
+        {/* <Box
           className="skills-card"
           bg="#0ac09d"
           p="5px"
@@ -148,9 +151,9 @@ export default function Skills() {
           <Text className="skills-card-name" fontWeight={"bold"}>
             Bootstrap
           </Text>
-        </Box>
+        </Box> */}
 
-        <Box
+        {/* <Box
           className="skills-card"
           bg="#0ac09d"
           p="5px"
@@ -161,9 +164,9 @@ export default function Skills() {
           <Text className="skills-card-name" fontWeight={"bold"}>
             Nodejs
           </Text>
-        </Box>
+        </Box> */}
 
-        <Box
+        {/* <Box
           className="skills-card"
           bg="#0ac09d"
           p="5px"
@@ -174,9 +177,9 @@ export default function Skills() {
           <Text className="skills-card-name" fontWeight={"bold"}>
             Mongodb
           </Text>
-        </Box>
+        </Box> */}
 
-        <Box
+        {/* <Box
           className="skills-card"
           bg="#0ac09d"
           p="5px"
@@ -187,9 +190,9 @@ export default function Skills() {
           <Text className="skills-card-name" fontWeight={"bold"}>
             Nextjs
           </Text>
-        </Box>
+        </Box> */}
 
-        <Box
+        {/* <Box
           className="skills-card"
           bg="#0ac09d"
           p="5px"
@@ -200,7 +203,7 @@ export default function Skills() {
           <Text className="skills-card-name" fontWeight={"bold"}>
             Express
           </Text>
-        </Box>
+        </Box> */}
 
         {/*  */}
 
@@ -230,7 +233,7 @@ export default function Skills() {
           </Text>
         </Box>
 
-        <Box
+        {/* <Box
           className="skills-card"
           bg="#0ac09d"
           p="5px"
@@ -241,7 +244,7 @@ export default function Skills() {
           <Text className="skills-card-name" fontWeight={"bold"}>
             Postman
           </Text>
-        </Box>
+        </Box> */}
 
         <Box
           className="skills-card"

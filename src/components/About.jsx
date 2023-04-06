@@ -45,16 +45,18 @@ export default function About() {
               I am, M Noor Mohammed
             </Text>{" "}
           </Heading>
-          <Text color={"black.400"}  fontSize={{ base: "2xl", lg: "3xl" }}>
+          {/* <Text color={"black.400"}  fontSize={{ base: "2xl", lg: "3xl" }}>
               Full Stack Web Developer
+            </Text> */}
+            <Text color={"black.400"}  fontSize={{ base: "2xl", lg: "3xl" }}>
+              Front-End Developer
             </Text>
           <Text
             fontSize={{ base: "md", lg: "lg" }}
             color={"gray.500"}
             id="user-detail-intro"
           >
-            Passionate about building web applications using front-end and
-            backend technologies . I believe in continuous learning and growth.
+            Passionate about building web applications using front-end technologies . I believe in continuous learning and growth.
             Looking forward to work in a challenging work environment.
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
@@ -96,8 +98,8 @@ export default function About() {
 
       <Flex flex={1}
         bg={useColorModeValue('white', 'gray.800')}
-        boxShadow={'2xl'}
-        borderRadius={'30%'}
+        boxShadow={'1xl'}
+        borderRadius={'20%'}
       
        > 
         <Image
