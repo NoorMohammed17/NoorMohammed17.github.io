@@ -2,33 +2,32 @@ export const repos = [
   
     {
       id: 52801449888,
-      name: "boAt-Website-Clone",
-      html_url: "https://github.com/OnkarK0273/arrogant-straw-2352",
-      description: " the website which shows you electronic products, log in, and add them to your shopping cart.",
-      homepage: "https://boat-clone-three.vercel.app/index.html",
-      topics: ["css", "html", "javascript"],
+      name: "Koolz-Clone",
+      html_url: "https://github.com/OnkarK0273/koovs-Website-Clone",
+      description: " The Koolz.com Clone is a fully functional e-commerce website that allows users to browse and purchase a variety of products.",
+      homepage: "https://koolz.vercel.app/",
+      topics: ["ReactJS", "Redux", "TypeScript","ChakraUI"],
       images:[ '/images/botlife-1.png',
       '/images/botlife-2.png',
       '/images/botlife-3.png',]
     },
     {
       id: 586433289,
-      name: "Amazon-prime-clone",
-      full_name: "OnkarK0273/Amazon-prime-clone",
-      html_url: "https://github.com/OnkarK0273/Amazon-prime-clone",
-      homepage: "https://amazone-prime-clone.netlify.app/index.html",
+      name: "Himalaya-clone",
+      html_url: "https://github.com/btcpatil/handy-zipper-9467",
+      homepage: "https://friendly-pudding-a5d011.netlify.app/homepage/",
       topics: ["css3", "html5", "javascript"],
       images:[ '/images/prime-1.png',
       '/images/prime-2.png',
       ],
-      description:"the website allows you to search for all movies."
+      description:"Himalaya offers a full line of clinically-studied herbal formulations, certified USDA organic Single herbs, and a full line of body care products. This is collaborative project."
     },
     {
       id: 542080132,
-      name: "Dot&Key-Website-Clone",
-      html_url: "https://github.com/OnkarK0273/roasted-brake-1134",
-      description:"the website which shows you skin-care products, add them to your shopping cart and purchase them",
-      homepage: "https://roasted-brake-1134-dot-kay-lifecare.netlify.app/",
+      name: "Calculator",
+      html_url: "https://github.com/NoorMohammed17/Calculator",
+      description:"This is a simple calculator using HTML, CSS & JavaScript",
+      homepage: "https://thriving-pika-1a1887.netlify.app/",
       topics: ["css", "html", "javascript"],
       images:[ '/images/dor&key-1.png',
       '/images/dor&key-2.png',
@@ -37,10 +36,10 @@ export const repos = [
     {
       id: 54208013255,
       name: "HealthKart-Website-Clone",
-      html_url: "https://github.com/akaushik509/internal-appliance-3345",
-      description:"HealthKart-Website-Clone is collaborative project, It is a great place for people serious about health and fitness.",
-      homepage: "https://nutribest-mocha.vercel.app/",
-      topics: ["NextJS", "Redux", "ChkraUI"],
+      html_url: "https://github.com/NoorMohammed17/StarWars",
+      description:"A simple Star-Wars characters search website, where you can search for the character by entering their name and onclick of the particular name you can check their personal info and the antamoy.",
+      homepage: "https://cool-tiramisu-12102a.netlify.app/index.html/",
+      topics: ["css", "html", "javascript"],
       images:[ '/images/helth-1.png',
       '/images/helth-2.png',
       '/images/helth-3.png',
@@ -48,33 +47,6 @@ export const repos = [
       '/images/helth-5.png',
       '/images/helth-6.png']
     },
-    {
-      id: 528014496,
-      name: "Koovs-Website-Clone",
-      html_url: "https://github.com/OnkarK0273/penitent-degree-5872",
-      description: "Koovs-Website-Clone is a fully functional e-commerce website that allows users to browse and purchase a variety of products.",
-      homepage: "https://koolz.vercel.app/",
-      topics: ["ReactJS", "Redux", "TypeScript","ChkraUI"],
-      images:[ '/images/koovs-1.png',
-      '/images/koovs-2.png',
-      '/images/koovs-3.png',
-      '/images/koovs-4.png',
-      '/images/koovs-5.png',
-      '/images/koovs-6.png',
-      '/images/koovs-7.png']
-    },
-    {
-      id: 5280144969999,
-      name: "Indiamart-Website-Clone",
-      html_url: "https://github.com/OnkarK0273/resilient-gate-1588",
-      description: "Indiamart-Website-Clone is a leading B2B e-commerce company in India that connects suppliers with buyers.",
-      homepage: "https://martmate.vercel.app/",
-      topics: ["ReactJS", "Redux", "ChkraUI","NodeJS","ExpressJS","MongoDB"],
-      images:[ '/images/mart-1.png',
-      '/images/mart-2.png',
-      '/images/mart-3.png',
-      '/images/mart-4.png',
-      '/images/mart-5.png'
-     ]
-    }
+    
+   
   ];
