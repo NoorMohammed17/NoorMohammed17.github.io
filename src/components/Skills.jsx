@@ -71,10 +71,12 @@ export default function Skills() {
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
         >
+               <Center>
           <Icon className="skills-card-img" as={FaCss3Alt} boxSize={8} />
           <Text className="skills-card-name" fontWeight={"bold"}>
             CSS
           </Text>
+                      </Center>
         </Box>
 
         <Box
@@ -84,10 +86,12 @@ export default function Skills() {
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
         >
+               <Center>
           <Icon className="skills-card-img" as={SiJavascript} boxSize={8} />
           <Text className="skills-card-name" fontWeight={"bold"}>
             JavaScript
           </Text>
+                      </Center>
         </Box>
 
         <Box
@@ -97,10 +101,12 @@ export default function Skills() {
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
         >
+               <Center>
           <Icon className="skills-card-img" as={SiTypescript} boxSize={8} />
           <Text className="skills-card-name" fontWeight={"bold"}>
             TypeScript
           </Text>
+                      </Center>
         </Box>
 
         <Box
@@ -109,11 +115,12 @@ export default function Skills() {
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
-        >
+        ><Center>
           <Icon className="skills-card-img" as={FaReact} boxSize={8} />
           <Text className="skills-card-name" fontWeight={"bold"}>
             React
           </Text>
+               </Center>
         </Box>
 
         <Box
@@ -123,10 +130,12 @@ export default function Skills() {
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
         >
+               <Center>
           <Icon className="skills-card-img" as={SiRedux} boxSize={8} />
           <Text className="skills-card-name" fontWeight={"bold"}>
             Redux
           </Text>
+                      </Center>
         </Box>
 
         {/*  */}
@@ -138,10 +147,12 @@ export default function Skills() {
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
         >
+               <Center>
           <Icon className="skills-card-img" as={SiChakraui} boxSize={8} />
           <Text className="skills-card-name" fontWeight={"bold"}>
             Chakra
           </Text>
+                      </Center>
         </Box>
 
         {/* <Box
@@ -218,10 +229,12 @@ export default function Skills() {
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
         >
+               <Center>
           <Icon className="skills-card-img" as={SiVercel} boxSize={8} />
           <Text className="skills-card-name" fontWeight={"bold"}>
             Vercel
           </Text>
+                      </Center>
         </Box>
 
         <Box
@@ -230,11 +243,12 @@ export default function Skills() {
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
-        >
+        ><Center>
           <Icon className="skills-card-img" as={SiNetlify} boxSize={8} />
           <Text className="skills-card-name" fontWeight={"bold"}>
             Netlify
           </Text>
+               </Center>
         </Box>
 
         {/* <Box
@@ -256,11 +270,12 @@ export default function Skills() {
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
-        >
+        ><Center>
           <Icon className="skills-card-img" as={FaGithub} boxSize={8} />
           <Text className="skills-card-name" fontWeight={"bold"}>
             Github
           </Text>
+               </Center>
         </Box>
 
         <Box
@@ -269,7 +284,7 @@ export default function Skills() {
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
-        >
+        ><Center>
           <Icon
             className="skills-card-img"
             as={SiVisualstudiocode}
@@ -278,6 +293,7 @@ export default function Skills() {
           <Text className="skills-card-name" fontWeight={"bold"}>
             VScode
           </Text>
+               </Center>
         </Box>
 
         <Box
@@ -286,11 +302,12 @@ export default function Skills() {
           p="5px"
           _hover={{ bg: "#E2E8F0" }}
           borderRadius={"md"}
-        >
+        ><Center>
           <Icon className="skills-card-img" as={SiCanva} boxSize={8} />
           <Text className="skills-card-name" fontWeight={"bold"}>
             Canva
           </Text>
+               </Center>
         </Box>
       </Grid>
     </Box>
