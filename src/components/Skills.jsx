@@ -1,4 +1,5 @@
-import { Box, Grid, Heading, Icon, Text } from "@chakra-ui/react";
+import { Box, Grid, Heading, Icon, Text
+       , Center} from "@chakra-ui/react";
 import React from "react";
 import {
   FaHtml5,
@@ -52,11 +53,14 @@ export default function Skills() {
           p="10px"
           borderRadius={"md"}
           _hover={{ bg: "#E2E8F0" }}
-        >
+        ><Center>
           <Icon className="skills-card-img" as={FaHtml5} boxSize={8} />
+          </Center>
+          <Center>
           <Text className="skills-card-name" fontWeight={"bold"}>
             HTML
           </Text>
+            </Center>
         </Box>
        
 
