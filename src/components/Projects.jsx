@@ -1,93 +1,117 @@
 import React from "react";
-import licious from "./Pictures/licious.PNG";
-import himalaya from "./Pictures/himalaya.PNG";
-import { Image, Link, Flex, Button,Heading } from "@chakra-ui/react";
+//import licious from "./Pictures/licious.PNG";
+//import himalaya from "./Pictures/himalaya.PNG";
+import { Box, Center, Heading, Show } from "@chakra-ui/react";
+//import React from "react";
+import { ProjectCards,MediumProjectCard } from "./ProjectCard";
 
 const Projects = () => {
-  const licious_Url = "https://guileless-kleicha-1e91f4.netlify.app/";
-  // const nordstrom_Url = "";
-  const himalaya_Url = "https://friendly-pudding-a5d011.netlify.app/homepage/";
-  // const github_himalaya_Url="https://github.com/btcpatil/handy-zipper-9467";
-
+ 
   return (
-    <div id="projects">
-      <Heading color="#0ac09d" p="30px" mb="20px" textAlign="center">
-        MY PROJECTS
-      </Heading>
+    <Box
+      pl={{
+        base: "5",
+        sm: "5",
+        md: "5",
+        lg: "10",
+        xl: "10",
+        "2xl": "10",
+      }}
+      pr={{
+        base: "5",
+        sm: "5",
+        md: "5",
+        lg: "10",
+        xl: "10",
+        "2xl": "10",
+      }}
+      id="projects"
+    >
+      <Center>
+        <Heading mb={"40px"}>Projects</Heading>
+      </Center>
 
-      <div style={{ display: "flex", marginBottom: "30px", margin:'auto' }}>
-        <div style={{ width: "65%", marginRight: "10px" }}>
-          <img src={licious} alt="licious"  width="100%" />
-        </div>
-        <div>
-          <h1>Licious Clone</h1>
-          <Flex id="tech">
-            <Image
-              w={"50px"}
-              src="https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg"
-            />
-            <Image
-              w={"50px"}
-              src="https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg"
-            />
-            <Image
-              w={"50px"}
-              src="https://chiranjeev-thapliyal.vercel.app/svg/css3.svg"
-            />
-          </Flex>
-          <Flex>
-            <Link
-              href="https://github.com/PratyayChakraborty/obscene-pest-6443"
-              isExternal
-            >
-              <Image
-                w={"50px"}
-                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-              ></Image>
-            </Link>
-            <Link href={licious_Url} isExternal>
-              <Button colorScheme="purple">Visit Site</Button>
-            </Link>
-          </Flex>
-        </div>
-      </div>
-      <div style={{ display: "flex" }}>
-        <div style={{ width: "65%", marginRight: "10px" }}>
-          <img src={himalaya} alt="himalaya"  width="100%"/>
-        </div>
-        <div>
-          <h1>Himalaya Clone</h1>
-          <Flex>
-            <Image
-              w={"50px"}
-              src="https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg"
-            />
-            <Image
-              w={"50px"}
-              src="https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg"
-            />
-            <Image
-              w={"50px"}
-              src="https://chiranjeev-thapliyal.vercel.app/svg/css3.svg"
-            />
-          </Flex>
-          <Flex>
-            <Link
-              href="https://github.com/btcpatil/handy-zipper-9467"
-              isExternal
-            >
-              <Image
-                w={"50px"}
-                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-              ></Image>
-            </Link>
-            <Link href={himalaya_Url} isExternal>
-              <Button colorScheme="purple">Visit Site</Button>
-            </Link>
-          </Flex>
-        </div>
-      </div>
-    </div>
+      <ProjectCards
+        direction={"row-reverse"}
+        deployedLink={"https://koolz.vercel.app/"}
+        image={["https://www.shutterstock.com/shutterstock/photos/1222098511/display_1500/stock-vector-infographic-dashboard-template-simple-green-blue-design-of-interface-admin-panel-with-graphs-1222098511.jpg","https://img.freepik.com/free-vector/dashboard-interface-user-panel-template_52683-23323.jpg?w=2000"]}
+        title={"Koolz-Clone"}
+        subTitle={"e-commerce"}
+        GithubLink={"https://github.com/OnkarK0273/koovs-Website-Clone"}
+        features={[
+          "jsonweb tokens authentication",
+          "Sign up or log in to watch  your volunteer opportunities",
+          "Each Volunteer opportunity has a dedicated page with a detailed information ",
+          "View Volunteer oppurtinites related to their location work mode type and by key words",
+          "Sort, search, and filter to easily find the opportunities you're looking for",
+          "Admin side with complete information of volunteer opportunities",
+        ]}
+        description={
+          " The Koolz.com Clone is a fully functional e-commerce website that allows users to browse and purchase a variety of products."
+        }
+        techStack={[
+            "ReactJS", "Redux", "TypeScript","ChakraUI"
+        ]}
+      />
+       <ProjectCards
+        direction={"row-reverse"}
+        deployedLink={"https://koolz.vercel.app/"}
+        image={["https://www.shutterstock.com/shutterstock/photos/1222098511/display_1500/stock-vector-infographic-dashboard-template-simple-green-blue-design-of-interface-admin-panel-with-graphs-1222098511.jpg","https://img.freepik.com/free-vector/dashboard-interface-user-panel-template_52683-23323.jpg?w=2000"]}
+        title={"Koolz-Clone"}
+        subTitle={"e-commerce"}
+        GithubLink={"https://github.com/OnkarK0273/koovs-Website-Clone"}
+        features={[
+          "jsonweb tokens authentication",
+          "Sign up or log in to watch  your volunteer opportunities",
+          "Each Volunteer opportunity has a dedicated page with a detailed information ",
+          "View Volunteer oppurtinites related to their location work mode type and by key words",
+          "Sort, search, and filter to easily find the opportunities you're looking for",
+          "Admin side with complete information of volunteer opportunities",
+        ]}
+        description={
+          " The Koolz.com Clone is a fully functional e-commerce website that allows users to browse and purchase a variety of products."
+        }
+        techStack={[
+            "ReactJS", "Redux", "TypeScript","ChakraUI"
+        ]}
+      />
+
+    
+
+     
+
+     
+
+      <Show breakpoint="(max-width: 993px)">
+        <MediumProjectCard
+           deployedLink={"https://koolz.vercel.app/"}
+           image={["https://www.shutterstock.com/shutterstock/photos/1222098511/display_1500/stock-vector-infographic-dashboard-template-simple-green-blue-design-of-interface-admin-panel-with-graphs-1222098511.jpg","https://img.freepik.com/free-vector/dashboard-interface-user-panel-template_52683-23323.jpg?w=2000"]}
+           title={"Koolz-Clone"}
+           subTitle={"e-commerce"}
+           GithubLink={"https://github.com/OnkarK0273/koovs-Website-Clone"}
+          description={
+            "Health Prime is an online platform that offers a wide range of healthcare products and medicines to users. With its user-friendly interface and competitive pricing, Health Prime makes it easy for users to find and purchase the products they need. "
+          }
+          techStack={[
+            "ReactJS", "Redux", "TypeScript","ChakraUI"
+        ]}
+        />
+          <MediumProjectCard
+           deployedLink={"https://koolz.vercel.app/"}
+           image={["https://www.shutterstock.com/shutterstock/photos/1222098511/display_1500/stock-vector-infographic-dashboard-template-simple-green-blue-design-of-interface-admin-panel-with-graphs-1222098511.jpg","https://img.freepik.com/free-vector/dashboard-interface-user-panel-template_52683-23323.jpg?w=2000"]}
+           title={"Koolz-Clone"}
+           subTitle={"e-commerce"}
+           GithubLink={"https://github.com/OnkarK0273/koovs-Website-Clone"}
+          description={
+            "Health Prime is an online platform that offers a wide range of healthcare products and medicines to users. With its user-friendly interface and competitive pricing, Health Prime makes it easy for users to find and purchase the products they need. "
+          }
+          techStack={[
+            "ReactJS", "Redux", "TypeScript","ChakraUI"
+        ]}
+        />
+       
+      </Show>
+    </Box>
   );
 };
 
