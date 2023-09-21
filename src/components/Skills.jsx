@@ -12,7 +12,7 @@ import { TfiWrite } from "react-icons/tfi";
 const Skills = () => {
   return (
     <>
-      <section id="skills">
+      <section id="skills" style={{mb:'40px'}}>
         <div className="main-text">
           <h2>
             <span>My </span>Skills

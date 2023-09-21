@@ -20,7 +20,7 @@ export default function Home() {
       margin='auto'
       mr='5%'
       mt='20px'
-      mb={'40px'}
+      mb={'50px'}
       id={'about'}
     >
       

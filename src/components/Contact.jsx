@@ -33,7 +33,7 @@ import {
         CONTACT
       </Heading>
 
-      <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden" >
+      <Container bg="linear-gradient(#222c31, #111d32)" maxW="full" mt={0} centerContent overflow="hidden" >
         <Flex>
           <Box
             bg="#02054B"
