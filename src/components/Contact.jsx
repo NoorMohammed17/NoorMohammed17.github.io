@@ -29,7 +29,7 @@ import {
   export default function Contact() {
     return (
       <div id={'contact'}>
-        <Heading color="#0ac09d" p="30px" mb="20px" textAlign="center">
+        <Heading color="#fff" p="30px" mb="20px" textAlign="center">
         CONTACT
       </Heading>
 

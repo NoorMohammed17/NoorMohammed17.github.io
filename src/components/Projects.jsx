@@ -6,6 +6,8 @@ import { Box, Center, Heading, Show } from "@chakra-ui/react";
 import { ProjectCards,MediumProjectCard } from "./ProjectCard";
 
 const Projects = () => {
+  let img1="https://www.shutterstock.com/shutterstock/photos/1222098511/display_1500/stock-vector-infographic-dashboard-template-simple-green-blue-design-of-interface-admin-panel-with-graphs-1222098511.jpg";
+  let img2 = "https://img.freepik.com/free-vector/dashboard-interface-user-panel-template_52683-23323.jpg?w=2000"
  
   return (
     <Box
@@ -28,26 +30,26 @@ const Projects = () => {
       id="projects"
     >
       <Center>
-        <Heading mb={"40px"}>Projects</Heading>
+        <Heading mb={"40px"} color={'white'}>Projects</Heading>
       </Center>
 
       <ProjectCards
         direction={"row-reverse"}
         deployedLink={"https://koolz.vercel.app/"}
-        image={["https://www.shutterstock.com/shutterstock/photos/1222098511/display_1500/stock-vector-infographic-dashboard-template-simple-green-blue-design-of-interface-admin-panel-with-graphs-1222098511.jpg","https://img.freepik.com/free-vector/dashboard-interface-user-panel-template_52683-23323.jpg?w=2000"]}
-        title={"Koolz-Clone"}
-        subTitle={"e-commerce"}
+        image={[img1,img2]}
+        title={"Koolz"}
+        subTitle={"Group Project (e-commerce)"}
         GithubLink={"https://github.com/OnkarK0273/koovs-Website-Clone"}
         features={[
-          "jsonweb tokens authentication",
-          "Sign up or log in to watch  your volunteer opportunities",
-          "Each Volunteer opportunity has a dedicated page with a detailed information ",
-          "View Volunteer oppurtinites related to their location work mode type and by key words",
-          "Sort, search, and filter to easily find the opportunities you're looking for",
-          "Admin side with complete information of volunteer opportunities",
+          "A home page with featured products and categories.",
+          "Product detail pages with images, descriptions, and pricing information.",
+          "A shopping cart to keep track of selected items. ",
+          "A checkout process to complete purchases.",
+          "User account creation and login functionality.",
+         
         ]}
         description={
-          " The Koolz.com Clone is a fully functional e-commerce website that allows users to browse and purchase a variety of products."
+          " Koolz is a fully functional e-commerce website that allows users to browse and purchase a variety of products."
         }
         techStack={[
             "ReactJS", "Redux", "TypeScript","ChakraUI"
@@ -55,24 +57,62 @@ const Projects = () => {
       />
        <ProjectCards
         direction={"row-reverse"}
-        deployedLink={"https://koolz.vercel.app/"}
-        image={["https://www.shutterstock.com/shutterstock/photos/1222098511/display_1500/stock-vector-infographic-dashboard-template-simple-green-blue-design-of-interface-admin-panel-with-graphs-1222098511.jpg","https://img.freepik.com/free-vector/dashboard-interface-user-panel-template_52683-23323.jpg?w=2000"]}
-        title={"Koolz-Clone"}
-        subTitle={"e-commerce"}
-        GithubLink={"https://github.com/OnkarK0273/koovs-Website-Clone"}
+        deployedLink={"https://friendly-pudding-a5d011.netlify.app/"}
+        image={[img1, img2]}
+        title={"Himalaya-Clone"}
+        subTitle={"Group Project "}
+        GithubLink={"https://github.com/btcpatil/handy-zipper-9467"}
         features={[
-          "jsonweb tokens authentication",
-          "Sign up or log in to watch  your volunteer opportunities",
-          "Each Volunteer opportunity has a dedicated page with a detailed information ",
-          "View Volunteer oppurtinites related to their location work mode type and by key words",
-          "Sort, search, and filter to easily find the opportunities you're looking for",
-          "Admin side with complete information of volunteer opportunities",
+          "Functional navigation bar with user details.",
+          "Login signup functionality for multiple users with the help of local storage.",
+          "Product and Each product page. ",
+        "Cart page and Payment page."
         ]}
         description={
-          " The Koolz.com Clone is a fully functional e-commerce website that allows users to browse and purchase a variety of products."
+          " Himalaya  website offers a full line of clinically-studied herbal formulations, certified USDA organic Single herbs, and a full line of body care products that allows users to browse and purchase a variety of products."
         }
         techStack={[
-            "ReactJS", "Redux", "TypeScript","ChakraUI"
+            "JavaScript","HTML","CSS"
+        ]}
+      />
+      <ProjectCards
+        direction={"row-reverse"}
+        deployedLink={"https://foodordercartapp.netlify.app/"}
+        image={[img1, img2]}
+        title={"Cart Meals"}
+        subTitle={"Individual Project"}
+        GithubLink={"https://github.com/NoorMohammed17/FoodOrderApp"}
+        features={[
+          "We can add, remove the items in the cart.",
+          "React.portals are used to create the modal dailog box.",
+          "The modal will be closed on clicking the backdrop or the close button. ",
+        "We can increase the quantity of items and responsive design."
+        ]}
+        description={
+          "Cart Meals is a simple food order application using React.js features."
+        }
+        techStack={[
+            "React js","react Portals", "react hooks"
+        ]}
+      />
+       <ProjectCards
+        direction={"row-reverse"}
+        deployedLink={"https://animationframermotionproject.netlify.app/"}
+        image={[img1, img2]}
+        title={"React Challenges"}
+        subTitle={"Individual Project"}
+        GithubLink={"https://github.com/NoorMohammed17/AnimationsProject"}
+        features={[
+          "We can add the challenges, toggle between active, completed and failed challenges.",
+          "React.portals are used to create the modal dailog box.",
+          "The modal will be closed on clicking the backdrop or the close button. ",
+        "Used framer motion for animations."
+        ]}
+        description={
+          "React challenges website built with react and framer-motion to apply animations."
+        }
+        techStack={[
+            "React js","react Portals", "react hooks","framer motion"
         ]}
       />
 
@@ -85,30 +125,58 @@ const Projects = () => {
       <Show breakpoint="(max-width: 993px)">
         <MediumProjectCard
            deployedLink={"https://koolz.vercel.app/"}
-           image={["https://www.shutterstock.com/shutterstock/photos/1222098511/display_1500/stock-vector-infographic-dashboard-template-simple-green-blue-design-of-interface-admin-panel-with-graphs-1222098511.jpg","https://img.freepik.com/free-vector/dashboard-interface-user-panel-template_52683-23323.jpg?w=2000"]}
+           image={[img1,img2]}
            title={"Koolz-Clone"}
-           subTitle={"e-commerce"}
+           subTitle={"Group Project (e-commerce)"}
            GithubLink={"https://github.com/OnkarK0273/koovs-Website-Clone"}
           description={
-            "Health Prime is an online platform that offers a wide range of healthcare products and medicines to users. With its user-friendly interface and competitive pricing, Health Prime makes it easy for users to find and purchase the products they need. "
+            "Koolz is a fully functional e-commerce website that allows users to browse and purchase a variety of products. "
           }
           techStack={[
             "ReactJS", "Redux", "TypeScript","ChakraUI"
         ]}
         />
           <MediumProjectCard
-           deployedLink={"https://koolz.vercel.app/"}
-           image={["https://www.shutterstock.com/shutterstock/photos/1222098511/display_1500/stock-vector-infographic-dashboard-template-simple-green-blue-design-of-interface-admin-panel-with-graphs-1222098511.jpg","https://img.freepik.com/free-vector/dashboard-interface-user-panel-template_52683-23323.jpg?w=2000"]}
-           title={"Koolz-Clone"}
-           subTitle={"e-commerce"}
-           GithubLink={"https://github.com/OnkarK0273/koovs-Website-Clone"}
+           deployedLink={"https://friendly-pudding-a5d011.netlify.app/"}
+           image={[img1,img2]}
+           title={"Himalaya-Clone"}
+           subTitle={"Group Project "}
+           GithubLink={"https://github.com/btcpatil/handy-zipper-9467"}
           description={
-            "Health Prime is an online platform that offers a wide range of healthcare products and medicines to users. With its user-friendly interface and competitive pricing, Health Prime makes it easy for users to find and purchase the products they need. "
+            "Himalaya  website offers a full line of clinically-studied herbal formulations, certified USDA organic Single herbs, and a full line of body care products that allows users to browse and purchase a variety of products"
           }
           techStack={[
-            "ReactJS", "Redux", "TypeScript","ChakraUI"
+            "JavaScript","HTML","CSS"
         ]}
         />
+        <MediumProjectCard
+    
+        deployedLink={"https://foodordercartapp.netlify.app/"}
+        image={[img1, img2]}
+        title={"Cart Meals"}
+        subTitle={"Individual Project"}
+        GithubLink={"https://github.com/NoorMohammed17/FoodOrderApp"}
+        description={
+          "Cart Meals is a simple food order application using React.js features."
+        }
+        techStack={[
+            "React js","react Portals", "react hooks"
+        ]}
+        />
+        <MediumProjectCard
+        deployedLink={"https://animationframermotionproject.netlify.app/"}
+        image={[img1, img2]}
+        title={"React Challenges"}
+        subTitle={"Individual Project"}
+        GithubLink={"https://github.com/NoorMohammed17/AnimationsProject"}
+        description={
+          "React challenges website built with react and framer-motion to apply animations."
+        }
+        techStack={[
+            "React js","react Portals", "react hooks","framer motion"
+        ]}
+        />
+
        
       </Show>
     </Box>

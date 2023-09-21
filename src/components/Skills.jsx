@@ -1,315 +1,112 @@
-import { Box, Grid, Heading, Icon, Text
-       , Center} from "@chakra-ui/react";
 import React from "react";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  //FaBootstrap,
-  //FaNode,
-  FaGithub,
-} from "react-icons/fa";
-import {
-  SiJavascript,
-  SiTypescript,
-  SiRedux,
-  SiChakraui,
-  //SiExpress,
-  SiVercel,
-  SiNetlify,
-  //SiPostman,
-  SiVisualstudiocode,
-  SiCanva,
-} from "react-icons/si";
-//import { TbBrandNextjs } from "react-icons/tb";
-//import { DiMongodb } from "react-icons/di";
-//import { Center } from '@chakra-ui/react'
+import { FaReact } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+import { AiOutlineHtml5 } from "react-icons/ai";
+import { TbBrandCss3 } from "react-icons/tb";
+import { SiRedux } from "react-icons/si";
+import { DiNodejs } from "react-icons/di";
+import { SiTypescript } from "react-icons/si";
+import { TfiWrite } from "react-icons/tfi";
 
-export default function Skills() {
+
+const Skills = () => {
   return (
-    <Box id="skills">
-      <Heading color="#0ac09d" p="30px" mb="20px" textAlign="center">
-        SKILLS
-      </Heading>
-      <Grid
-        templateColumns={{
-          base: "repeat(2, 1fr)",
-          md: "repeat(3, 1fr)",
-          lg: "repeat(6, 1fr)",
-        }}
-        w={{base:'90%', md:'80%'}}
-        p={{base:'5%', md:'none'}}
-       
-       
-        rowGap={"20px"}
-        columnGap="20px"
-        m='auto'
-        alignItems={'center'}
-        justifyContent={'center'}
-       
-      >
-        <Box
-          bg="#0ac09d"
-          p="10px"
-          borderRadius={"md"}
-          _hover={{ bg: "#E2E8F0" }}
-        ><Center>
-          <Icon className="skills-card-img" as={FaHtml5} boxSize={8} />
-          </Center>
-          <Center>
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            HTML
-          </Text>
-            </Center>
-        </Box>
-       
+    <>
+      <section id="skills">
+        <div className="main-text">
+          <h2>
+            <span>My </span>Skills
+          </h2>
+          <p style={{ marginTop: "10px" }}>What I am Expert In ?</p>
+        </div>
 
-        <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        >
-               <Center>
-          <Icon className="skills-card-img" as={FaCss3Alt} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            CSS
-          </Text>
-                      </Center>
-        </Box>
+        <div className="nav-link skills" id="skills-part">
+      
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <FaReact
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#42b2e6" }}>
+              React
+            </h3>
+          </div>
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <TbBrandJavascript
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#42b2e6" }}>
+              JavaScript
+            </h3>
+          </div>
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <AiOutlineHtml5
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#42b2e6" }}>
+              HTML
+            </h3>
+          </div>
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <TbBrandCss3
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#42b2e6" }}>
+              CSS
+            </h3>
+          </div>
+          <div className="skills-card">
+            <div className="skills-card-img" style={{ textAlign: "center" }}>
+              <SiRedux
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#42b2e6" }}>
+              Redux
+            </h3>
+          </div>
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <DiNodejs
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#42b2e6" }}>
+              Node JS
+            </h3>
+          </div>
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <SiTypescript
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#42b2e6" }}>
+              TypeScript
+            </h3>
+          </div>
 
-        <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        >
-               <Center>
-          <Icon className="skills-card-img" as={SiJavascript} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            JavaScript
-          </Text>
-                      </Center>
-        </Box>
-
-        <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        >
-               <Center>
-          <Icon className="skills-card-img" as={SiTypescript} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            TypeScript
-          </Text>
-                      </Center>
-        </Box>
-
-        <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        ><Center>
-          <Icon className="skills-card-img" as={FaReact} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            React
-          </Text>
-               </Center>
-        </Box>
-
-        <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        >
-               <Center>
-          <Icon className="skills-card-img" as={SiRedux} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            Redux
-          </Text>
-                      </Center>
-        </Box>
-
-        {/*  */}
-
-        <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        >
-               <Center>
-          <Icon className="skills-card-img" as={SiChakraui} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            Chakra
-          </Text>
-                      </Center>
-        </Box>
-
-        {/* <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        >
-          <Icon className="skills-card-img" as={FaBootstrap} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            Bootstrap
-          </Text>
-        </Box> */}
-
-        {/* <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        >
-          <Icon className="skills-card-img" as={FaNode} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            Nodejs
-          </Text>
-        </Box> */}
-
-        {/* <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        >
-          <Icon className="skills-card-img" as={DiMongodb} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            Mongodb
-          </Text>
-        </Box> */}
-
-        {/* <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        >
-          <Icon className="skills-card-img" as={TbBrandNextjs} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            Nextjs
-          </Text>
-        </Box> */}
-
-        {/* <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        >
-          <Icon className="skills-card-img" as={SiExpress} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            Express
-          </Text>
-        </Box> */}
-
-        {/*  */}
-
-        <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        >
-               <Center>
-          <Icon className="skills-card-img" as={SiVercel} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            Vercel
-          </Text>
-                      </Center>
-        </Box>
-
-        <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        ><Center>
-          <Icon className="skills-card-img" as={SiNetlify} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            Netlify
-          </Text>
-               </Center>
-        </Box>
-
-        {/* <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        >
-          <Icon className="skills-card-img" as={SiPostman} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            Postman
-          </Text>
-        </Box> */}
-
-        <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        ><Center>
-          <Icon className="skills-card-img" as={FaGithub} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            Github
-          </Text>
-               </Center>
-        </Box>
-
-        <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        ><Center>
-          <Icon
-            className="skills-card-img"
-            as={SiVisualstudiocode}
-            boxSize={8}
-          />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            VScode
-          </Text>
-               </Center>
-        </Box>
-
-        <Box
-          className="skills-card"
-          bg="#0ac09d"
-          p="5px"
-          _hover={{ bg: "#E2E8F0" }}
-          borderRadius={"md"}
-        ><Center>
-          <Icon className="skills-card-img" as={SiCanva} boxSize={8} />
-          <Text className="skills-card-name" fontWeight={"bold"}>
-            Canva
-          </Text>
-               </Center>
-        </Box>
-      </Grid>
-    </Box>
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <TfiWrite
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#42b2e6" }}>
+              DSA
+            </h3>
+          </div>
+        </div>
+      </section>
+    </>
   );
-}
+};
+
+export default Skills;

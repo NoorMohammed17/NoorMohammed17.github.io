@@ -1,120 +1,86 @@
 import {
-  Button,
-  Flex,
-  Heading,
-  Image,
-  Stack,
-  Text,
-  useBreakpointValue,
-  useColorModeValue,
-} from "@chakra-ui/react";
-import mypic from "./Pictures/proPic.jpeg";
-
-export default function About() {
-  return (
-    <Stack
-      minH={"100vh"}
-      direction={{ base: "column", md: "row" }}
-      className="about section"
-      margin='auto'
-      mr='5%'
-      mt='20px'
-      id={'about'}
-    >
-      
-      <Flex p={8} flex={1} align={"center"} justify={"center"}>
-        <Stack spacing={6} w={"full"} maxW={"lg"}>
-          <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-            <Text
-              as={"span"}
-              position={"relative"}
-              _after={{
-                content: "''",
-                width: "full",
-                height: useBreakpointValue({ base: "20%", md: "30%" }),
-                position: "absolute",
-                bottom: 1,
-                left: 0,
-                bg: "blue.400",
-                zIndex: -1,
-              }}
-            >
-              About Me
-            </Text>
-            <br />{" "}
-            <Text color={"blue.400"} as={"span"} id="user-detail-name">
-              I am, M Noor Mohammed
-            </Text>{" "}
-          </Heading>
-          {/* <Text color={"black.400"}  fontSize={{ base: "2xl", lg: "3xl" }}>
-              Full Stack Web Developer
-            </Text> */}
-            <Text color={"black.400"}  fontSize={{ base: "2xl", lg: "3xl" }}>
-              Front-End Developer
-            </Text>
-          <Text
-            fontSize={{ base: "md", lg: "lg" }}
-            color={"gray.500"}
-            id="user-detail-intro"
+    Box,
+    Button,
+    Center,
+    Heading,
+    Image,
+    Stack,
+    Text,
+  } from "@chakra-ui/react";
+ import profile from "./Pictures/proPic.jpeg"
+  import * as Scroll from "react-scroll";
+  
+  const About = () => {
+    return (
+      <Box id="about" className="about section" py={{ base: "10vh", md: "20vh" }}>
+        <Center mb={4}>
+          <Heading fontSize={{ base: "2xl", md: "4xl" }}   color={'white'}>About Me</Heading>
+        </Center>
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          spacing={{ base: 8, md: 16 }}
+          justify="center"
+          align="center"
+          mb={{ base: 16, md: 32 }}
+        >
+          <Image
+            src={profile}
+            alt="profile"
+            h={{ base: "200px", md: "350px" }}
+            w={{ base: "200px", md: "350px" }}
+            objectFit="cover"
+            overflow={'hidden'}
+            borderRadius="full"
+            boxShadow="2xl"
+            className="home-img"
+          />
+          <Box
+            w={{ base: "80%", md: "50%" }}
+            textAlign={{ base: "center", md: "left" }}
           >
-            Passionate about building web applications using front-end technologies . I believe in continuous learning and growth.
-            Looking forward to work in a challenging work environment.
-          </Text>
-          <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-            <Button
-              rounded={"full"}
-              bg={"blue.400"}
-              color={"white"}
-              _hover={{
-                bg: "blue.500",
-              }}
+            <Heading fontSize={{ base: "xl", md: "2xl" }} mb={4}   color={'white'}>
+              Hello, my name is M Noor Mohammed
+            </Heading>
+            <Text
+              fontSize={{ base: "sm", md: "lg" }}
+              mb={8}
+              color={'white'}
+              id={"user-detail-intro"}
             >
-              Contact
-            </Button>
-            <Button
-                // w={{ base: "150px", md: "100px", lg: "100px" }}
-                m="auto"
-                rounded={"full"}
-                onClick={() => {
-                  window.open(
-                    "https://drive.google.com/file/d/1jRySSU_Uuv_yTrvth5NLmz1ujZBK8owx/view?usp=share_link",
-                    "_blank"
-                  );
+              An enthusiastic Web Developer having experience of 1200+ hours of coding and building websites with variousweb technologies like HTML, React, Redux, CSS, Javascript and Node js. Problem- solving mindset and the ability to perform well in collaboration.Looking forward to utilizing current skillset and experience to build  world-class websites to achieve organizational goals.
+            </Text>
+            <Scroll.Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              <Button
+                w={{ base: "100%", md: "auto" }}
+                size="lg"
+                p="8"
+                borderRadius="10px"
+                fontSize={{ base: "sm", md: "lg" }}
+                bgGradient={
+                  "linear(to-l,#3CAED7 100%, #40BAB6 100%)"    
+                }
+                bgColor={"red"}
+                _hover={{
+                  color: 'white',
+                  bgColor:'black',
+                  cursor: "pointer",
+                 
                 }}
-                borderColor="teal"
-                variant="outline"
-                id="resume-button-1"
               >
-                <a
-                  id="resume-link-1"
-                  className="nav-link resume"
-                  href="/Noor_Mohammed_Resume.pdf"
-                  download
-                >
-                  Resume {""}
-                </a>
+                Contact Me
               </Button>
-          </Stack>
+            </Scroll.Link>
+          </Box>
         </Stack>
-      </Flex>
-
-      <Flex flex={1}
-        bg={useColorModeValue('white', 'gray.800')}
-        boxShadow={'1xl'}
-        borderRadius={'20%'}
-      
-       > 
-        <Image
-        htmlWidth="400"
-        htmlHeight="450"
-        borderRadius="full"
-        m='auto'
-          alt={" Image"}
-          objectFit={"cover"}
-          src={mypic}
-          className="home-img"
-        />
-      </Flex>
-    </Stack>
-  );
-}
+      </Box>
+    );
+  };
+  
+  export default About;

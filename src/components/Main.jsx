@@ -7,11 +7,13 @@ import Projects from "./Projects";
 import GithubStats from "./GithubStats";
 import Skills from "./Skills"
 import Contact from "./Contact";
+import Home from "./Home";
 
 const Main = () => {
   return (
     <div id="home">
       <Navbar />
+      <Home/>
       <About />
       <Skills/>
      
