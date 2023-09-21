@@ -1,17 +1,41 @@
-import React from "react";
-//import licious from "./Pictures/licious.PNG";
-//import himalaya from "./Pictures/himalaya.PNG";
 import { Box, Center, Heading, Show } from "@chakra-ui/react";
 //import React from "react";
 import { ProjectCards,MediumProjectCard } from "./ProjectCard";
 
+//klooz images
+import koolz1 from "./images/koolz1.png";
+import koolz2 from "./images/koolz2.png";
+import koolz3 from "./images/koolz3.png";
+
+//himalaya images
+import h1 from "./images/h1.png";
+import h2 from "./images/h2.png";
+import h3 from "./images/h3.png";
+import h4 from "./images/h4.png";
+
+//cart meals images
+import cm1 from "./images/cm1.png";
+import cm2 from "./images/cm2.png";
+
+//react challenges images
+import rc1 from "./images/rc1.png";
+import rc2 from "./images/rc2.png";
+import rc3 from "./images/rc3.png";
+
+
 const Projects = () => {
-  let img1="https://www.shutterstock.com/shutterstock/photos/1222098511/display_1500/stock-vector-infographic-dashboard-template-simple-green-blue-design-of-interface-admin-panel-with-graphs-1222098511.jpg";
-  let img2 = "https://img.freepik.com/free-vector/dashboard-interface-user-panel-template_52683-23323.jpg?w=2000"
+
+  const koolz=[koolz1,koolz2,koolz3];
+  const himalaya = [h1,h2,h3,h4];
+  const cartMeals = [cm1,cm2];
+  const reactChallenges = [rc1,rc2,rc3];
+
+  // let img1="https://www.shutterstock.com/shutterstock/photos/1222098511/display_1500/stock-vector-infographic-dashboard-template-simple-green-blue-design-of-interface-admin-panel-with-graphs-1222098511.jpg";
+  // let img2 = "https://img.freepik.com/free-vector/dashboard-interface-user-panel-template_52683-23323.jpg?w=2000"
  
   return (
     <Box
-    mt={'30px'}
+    mt={'40px'}
       pl={{
         base: "5",
         sm: "5",
@@ -31,13 +55,13 @@ const Projects = () => {
       id="projects"
     >
       <Center>
-        <Heading mb={"40px"} color={'white'}>Projects</Heading>
+        <Heading mb={"40px"}>Projects</Heading>
       </Center>
 
       <ProjectCards
         direction={"row-reverse"}
         deployedLink={"https://koolz.vercel.app/"}
-        image={[img1,img2]}
+        image={koolz}
         title={"Koolz"}
         subTitle={"Group Project (e-commerce)"}
         GithubLink={"https://github.com/OnkarK0273/koovs-Website-Clone"}
@@ -59,7 +83,7 @@ const Projects = () => {
        <ProjectCards
         direction={"row-reverse"}
         deployedLink={"https://friendly-pudding-a5d011.netlify.app/"}
-        image={[img1, img2]}
+        image={himalaya}
         title={"Himalaya-Clone"}
         subTitle={"Group Project "}
         GithubLink={"https://github.com/btcpatil/handy-zipper-9467"}
@@ -79,7 +103,7 @@ const Projects = () => {
       <ProjectCards
         direction={"row-reverse"}
         deployedLink={"https://foodordercartapp.netlify.app/"}
-        image={[img1, img2]}
+        image={cartMeals}
         title={"Cart Meals"}
         subTitle={"Individual Project"}
         GithubLink={"https://github.com/NoorMohammed17/FoodOrderApp"}
@@ -99,7 +123,7 @@ const Projects = () => {
        <ProjectCards
         direction={"row-reverse"}
         deployedLink={"https://animationframermotionproject.netlify.app/"}
-        image={[img1, img2]}
+        image={reactChallenges}
         title={"React Challenges"}
         subTitle={"Individual Project"}
         GithubLink={"https://github.com/NoorMohammed17/AnimationsProject"}
@@ -126,7 +150,7 @@ const Projects = () => {
       <Show breakpoint="(max-width: 993px)">
         <MediumProjectCard
            deployedLink={"https://koolz.vercel.app/"}
-           image={[img1,img2]}
+           image={koolz}
            title={"Koolz-Clone"}
            subTitle={"Group Project (e-commerce)"}
            GithubLink={"https://github.com/OnkarK0273/koovs-Website-Clone"}
@@ -139,7 +163,7 @@ const Projects = () => {
         />
           <MediumProjectCard
            deployedLink={"https://friendly-pudding-a5d011.netlify.app/"}
-           image={[img1,img2]}
+           image={himalaya}
            title={"Himalaya-Clone"}
            subTitle={"Group Project "}
            GithubLink={"https://github.com/btcpatil/handy-zipper-9467"}
@@ -153,7 +177,7 @@ const Projects = () => {
         <MediumProjectCard
     
         deployedLink={"https://foodordercartapp.netlify.app/"}
-        image={[img1, img2]}
+        image={cartMeals}
         title={"Cart Meals"}
         subTitle={"Individual Project"}
         GithubLink={"https://github.com/NoorMohammed17/FoodOrderApp"}
@@ -166,7 +190,7 @@ const Projects = () => {
         />
         <MediumProjectCard
         deployedLink={"https://animationframermotionproject.netlify.app/"}
-        image={[img1, img2]}
+        image={reactChallenges}
         title={"React Challenges"}
         subTitle={"Individual Project"}
         GithubLink={"https://github.com/NoorMohammed17/AnimationsProject"}

@@ -358,7 +358,7 @@ function MediumProjectCard({
                                 })}
                             </Flex>
                         </Flex>
-                        <Flex w={"100%"} mt={'20px'}>
+                        <Flex w={"100%"} mt={'30px'}>
                             <Link
                                 to={deployedLink}
                                 className="project-deployed-link"
