@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import GithubCalender from "./GithubCalender";
-import About from "./About";
+//import About from "./About";
 
 import Projects from "./Projects";
 import GithubStats from "./GithubStats";
@@ -14,7 +14,7 @@ const Main = () => {
     <div id="home">
       <Navbar />
       <Home/>
-      <About />
+      {/* <About /> */}
       <Skills/>
      
       <Projects />

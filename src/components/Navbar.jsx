@@ -16,7 +16,7 @@ import * as Scroll from "react-scroll";
 
 const Links = [
   { name: "Home", id: "home", class: "nav-link home" },
-  { name: "About", id: "about", class: "nav-link about" },
+  // { name: "About", id: "about", class: "nav-link about" },
   { name: "Skills", id: "skills", class: "nav-link skills" },
   { name: "Statistics", id: "statistics", class: "nav-link statistics" },
 

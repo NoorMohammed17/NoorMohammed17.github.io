@@ -11,6 +11,7 @@ const Projects = () => {
  
   return (
     <Box
+    mt={'30px'}
       pl={{
         base: "5",
         sm: "5",

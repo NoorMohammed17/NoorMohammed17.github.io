@@ -8,6 +8,7 @@ import {
   useBreakpointValue,
   useColorModeValue,
 } from "@chakra-ui/react";
+import * as Scroll from "react-scroll";
 import mypic from "./Pictures/proPic.jpeg";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       margin='auto'
       mr='5%'
       mt='20px'
+      mb={'40px'}
       id={'about'}
     >
       
@@ -28,6 +30,7 @@ export default function Home() {
             <Text
               as={"span"}
               position={"relative"}
+              color='white'
               _after={{
                 content: "''",
                 width: "full",
@@ -49,7 +52,7 @@ export default function Home() {
           {/* <Text color={"black.400"}  fontSize={{ base: "2xl", lg: "3xl" }}>
               Full Stack Web Developer
             </Text> */}
-            <Text color={"black.400"}  fontSize={{ base: "2xl", lg: "3xl" }}>
+            <Text color={"white"}  fontSize={{ base: "2xl", lg: "3xl" }}>
               Front-End Developer
             </Text>
           <Text
@@ -61,6 +64,14 @@ export default function Home() {
             Looking forward to work in a challenging work environment.
           </Text>
           <Stack direction={{ base: "column", md: "row" }} spacing={4}>
+          <Scroll.Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
             <Button
               rounded={"full"}
               bg={"blue.400"}
@@ -71,6 +82,7 @@ export default function Home() {
             >
               Contact
             </Button>
+            </Scroll.Link>
             <Button
                 // w={{ base: "150px", md: "100px", lg: "100px" }}
                 m="auto"
@@ -81,7 +93,8 @@ export default function Home() {
                     "_blank"
                   );
                 }}
-                borderColor="teal"
+                bgColor="blue.400"
+                color='white'
                 variant="outline"
                 id="resume-button-1"
               >
