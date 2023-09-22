@@ -55,7 +55,7 @@ const Projects = () => {
       id="projects"
     >
       <Center>
-        <Heading mb={"40px"}>Projects</Heading>
+        <Heading mb={"40px"} color={'white}'}>Projects</Heading>
       </Center>
 
       <ProjectCards

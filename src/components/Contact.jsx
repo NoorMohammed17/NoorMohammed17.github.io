@@ -4,7 +4,7 @@ import {
     Box,
     Heading,
     Text,
-    IconButton,
+    //IconButton,
     Button,
     VStack,
     HStack,
@@ -21,10 +21,13 @@ import {
     MdPhone,
     MdEmail,
     MdLocationOn,
-    MdFacebook,
+    //MdFacebook,
     MdOutlineEmail,
   } from 'react-icons/md';
-  import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
+  import { 
+    //BsGithub, 
+    //BsDiscord, 
+    BsPerson } from 'react-icons/bs';
   
   export default function Contact() {
     return (
@@ -33,7 +36,7 @@ import {
         CONTACT
       </Heading>
 
-      <Container bg="linear-gradient(#222c31, #111d32)" maxW="full" mt={0} centerContent overflow="hidden" >
+      <Container  background={"linear-gradient(#222c31, #111d32)"} maxW="full" mt={0} centerContent overflow="hidden" >
         <Flex>
           <Box
             bg="#02054B"
@@ -88,30 +91,30 @@ import {
                       spacing={5}
                       px={5}
                       alignItems="flex-start">
-                      <IconButton
+                      {/* <IconButton
                         aria-label="facebook"
                         variant="ghost"
                         size="lg"
                         isRound={true}
                         _hover={{ bg: '#0D74FF' }}
                         icon={<MdFacebook size="28px" />}
-                      />
-                      <IconButton
+                      /> */}
+                      {/* <IconButton
                         aria-label="github"
                         variant="ghost"
                         size="lg"
                         isRound={true}
                         _hover={{ bg: '#0D74FF' }}
                         icon={<BsGithub size="28px" />}
-                      />
-                      <IconButton
+                      /> */}
+                      {/* <IconButton
                         aria-label="discord"
                         variant="ghost"
                         size="lg"
                         isRound={true}
                         _hover={{ bg: '#0D74FF' }}
                         icon={<BsDiscord size="28px" />}
-                      />
+                      /> */}
                     </HStack>
                   </Box>
                 </WrapItem>

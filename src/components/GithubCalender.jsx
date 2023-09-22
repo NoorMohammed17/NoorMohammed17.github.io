@@ -5,14 +5,14 @@ import ReactTooltip from "react-tooltip";
 const GithubCalender = () => {
 
   return (
-    <Box w={{base:'90%',sm:'90%',md:'80%'}} m='auto'id={'statistics'}>
+    <Box w={{base:'90%',sm:'90%',md:'80%'}} m='auto'id={'statistics'} color={'white'}>
       <Heading color='#fff'pt='40px' pb='40px'textAlign={'center'}>GITHUB STATISTICS</Heading>
       <GitHubCalendar
         style={{ margin: "auto",width:'80%' }}
         username="NoorMohammed17"
         
-        blockSize={20}
-        fontSize={20}
+        blockSize={12}
+        fontSize={12}
         // color='#C7AE92'
         color='green'
       >
