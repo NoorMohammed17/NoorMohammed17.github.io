@@ -96,7 +96,7 @@ export default function Navbar() {
                 <a
                   id="resume-link-1"
                   className="nav-link resume"
-                  href="/Noor_Mohammed_Resume.pdf"
+                  href="/M_Noor_Mohammed_Resume(FE-Final).pdf"
                   download
                 >
                   Resume {""}
